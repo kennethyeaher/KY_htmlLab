@@ -5,7 +5,7 @@ provided CSS, include a local image, and publish the result with GitHub Pages.
 
 ## Files
 
-- `tutorial_1.html`: complete supplied letter with semantic HTML and CSS classes.
+- `index.html`: complete supplied letter with semantic HTML and CSS classes.
 - `tutorial_1_letter_styles.css`: supplied stylesheet, preserved unchanged.
 - `microscope.png`: local microscope illustration, displayed at 90 by 112 pixels.
 
@@ -14,15 +14,15 @@ The image must accompany the HTML submission or its relative path will break.
 
 ## Preview
 
-Open `tutorial_1.html` in a browser, or use VS Code Live Server. No build step or
+Open `index.html` in a browser, or use VS Code Live Server. No build step or
 project dependencies are required. The HTML links the supplied stylesheet
 using a relative path.
 
 ## Status
 
 GitHub Pages deployment remains to be completed. Styled Safari screenshots
-have been reviewed; the new image still needs browser verification. The university dates and dance research
-references have no supplied URLs and remain plain text.
+have been reviewed; the new image still needs browser verification. The university
+dates and dance research references have no supplied URLs and remain plain text.
 
 ## Check the styles
 
@@ -46,3 +46,25 @@ The HTML supplies alternative text describing the microscope and explicit
 width and height matching the source image. Reload the page to confirm it
 appears above the letter. In Developer Tools, check that `microscope.png` loads
 and that the image has natural dimensions of 90 by 112 pixels.
+
+## Submission and deployment
+
+Submit `index.html` with `microscope.png`, keeping both beside
+`tutorial_1_letter_styles.css`. The HTML was renamed from `tutorial_1.html` so
+GitHub Pages can use it as the site entry page. Its content and relative asset
+paths are unchanged.
+
+For GitHub Pages, publish from the `main` branch and the repository root (`/`).
+No custom build workflow is needed. The repository and live URL will be recorded
+after publication and verification.
+
+The assignment calls Pages optional, but its rubric assigns deployment four
+points out of twenty. Deployment is therefore included in the submission plan.
+
+| Rubric criterion | Current evidence |
+| --- | --- |
+| Semantic HTML structure | Text preservation and structure checks passed; Safari screenshots reviewed. |
+| Image inclusion | Local PNG and relative path checked; browser appearance pending. |
+| CSS linking | Local stylesheet path checked; styled Safari screenshots reviewed. |
+| CSS classes | All 26 supplied class names applied; element mappings checked. |
+| GitHub Pages | Not yet published. |
