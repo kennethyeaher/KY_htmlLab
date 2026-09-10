@@ -20,8 +20,10 @@ using a relative path.
 
 ## Status
 
-GitHub Pages deployment remains to be completed. Styled Safari screenshots
-have been reviewed; the new image still needs browser verification. The university
+GitHub Pages is deployed. The live HTML, CSS, and PNG returned HTTP 200 with
+correct content types and matched the local files byte for byte on September
+10, 2026. Local Safari screenshots confirm both styling and microscope rendering.
+Live browser appearance and Developer Tools checks remain pending. The university
 dates and dance research references have no supplied URLs and remain plain text.
 
 ## Check the styles
@@ -55,8 +57,13 @@ GitHub Pages can use it as the site entry page. Its content and relative asset
 paths are unchanged.
 
 For GitHub Pages, publish from the `main` branch and the repository root (`/`).
-No custom build workflow is needed. The repository and live URL will be recorded
-after publication and verification.
+No custom build workflow is needed.
+
+- [Repository](https://github.com/kennethyeaher/KY_htmlLab)
+- [Live letter](https://kennethyeaher.github.io/KY_htmlLab/)
+
+The Pages build and deployment passed. GitHub reported a Node deprecation warning
+in its managed build workflow; the lab itself has no Node dependency.
 
 The assignment calls Pages optional, but its rubric assigns deployment four
 points out of twenty. Deployment is therefore included in the submission plan.
@@ -64,7 +71,7 @@ points out of twenty. Deployment is therefore included in the submission plan.
 | Rubric criterion | Current evidence |
 | --- | --- |
 | Semantic HTML structure | Text preservation and structure checks passed; Safari screenshots reviewed. |
-| Image inclusion | Local PNG and relative path checked; browser appearance pending. |
-| CSS linking | Local stylesheet path checked; styled Safari screenshots reviewed. |
+| Image inclusion | Live PNG returned HTTP 200 and matched the local file; local Safari rendering confirmed. |
+| CSS linking | Live CSS returned HTTP 200 and matched the supplied stylesheet; local styled Safari screenshots reviewed. |
 | CSS classes | All 26 supplied class names applied; element mappings checked. |
-| GitHub Pages | Not yet published. |
+| GitHub Pages | Deployment passed; live HTML and both assets returned HTTP 200 and matched local files. |
