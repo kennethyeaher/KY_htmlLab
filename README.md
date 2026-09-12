@@ -4,7 +4,8 @@ A semantic HTML implementation of a supplied university letter, styled with the
 course stylesheet and published with GitHub Pages. Built for INST630 Homework 1.
 
 [View the live letter](https://kennethyeaher.github.io/KY_htmlLab/) ·
-[Review verification results](docs/verification.md)
+[Review verification results](docs/verification.md) ·
+[Explore the companion source](companion/index.html)
 
 ## Contribution and scope
 
@@ -62,6 +63,31 @@ belongs on the list; each item is matched through that ancestor.
 Both paths resolve beside the HTML. Explicit image dimensions reserve its space,
 and alternative text conveys its subject. The document uses semantic dates,
 abbreviations, subscripts, superscripts, quotation, and citation markup as well.
+
+## Original companion: Correspondence
+
+The [companion](companion/index.html) applies the same HTML skills to an original,
+clearly fictional workshop invitation. It has its own stylesheet and leaves the
+three graded files unchanged. Open `companion/index.html` locally to explore it.
+
+A wide screen places the introduction beside a paper-like reading column. At
+900 pixels and below, the content stacks. Native `details` elements expose design
+notes, a skip link reaches the invitation, and a print stylesheet keeps the
+complete letter on paper. No JavaScript or dependencies are required.
+
+The [companion verification notes](docs/companion-verification.md) record mobile,
+keyboard, HTML, contrast, and print checks, plus their limits.
+
+<details>
+<summary>View the actual Safari print preview</summary>
+
+![One-page printout of the fictional workshop invitation, including event details, preparation steps, and closing.](docs/companion-print.png)
+
+Saved with Safari at 100% on US Letter paper, with browser headers, footers, and
+background printing off. This image shows the print layout; the screen layout
+also includes the introduction and interactive design notes.
+
+</details>
 
 ## Preview and submission
 
