@@ -17,7 +17,7 @@ specific checks, not a full accessibility certification.
 | Desktop layout | At 1280 CSS pixels, document width was 1280 with no page overflow. Earlier Safari screenshots also show the styled letter through its closing. |
 | Keyboard focus | Tab reached the email link; its computed outline was solid yellow, 2px wide, with a 2px offset. The mail application was not opened. |
 | Browser semantics | The accessibility tree exposed one level-one heading, three level-two headings, lists, and the image description. This is not a VoiceOver listening test. |
-| Deployment | On September 10, live HTML, CSS, and PNG each returned HTTP 200 and matched the local files byte for byte. User screenshots subsequently showed the live Safari page and both assets in Network. |
+| Deployment | Rechecked on September 12 after publishing the companion: the letter HTML, CSS, and PNG each returned HTTP 200 and matched local bytes. Browser inspection confirmed the blue subject heading and loaded 90 by 112 pixel image. |
 
 ## Limits and observations
 

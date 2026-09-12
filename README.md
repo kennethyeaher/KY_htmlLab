@@ -5,7 +5,7 @@ course stylesheet and published with GitHub Pages. Built for INST630 Homework 1.
 
 [View the live letter](https://kennethyeaher.github.io/KY_htmlLab/) ·
 [Review verification results](docs/verification.md) ·
-[Explore the companion source](companion/index.html)
+[View the live companion](https://kennethyeaher.github.io/KY_htmlLab/companion/)
 
 ## Contribution and scope
 
@@ -66,9 +66,11 @@ abbreviations, subscripts, superscripts, quotation, and citation markup as well.
 
 ## Original companion: Correspondence
 
-The [companion](companion/index.html) applies the same HTML skills to an original,
-clearly fictional workshop invitation. It has its own stylesheet and leaves the
-three graded files unchanged. Open `companion/index.html` locally to explore it.
+The [live companion](https://kennethyeaher.github.io/KY_htmlLab/companion/) applies
+the same HTML skills to an original, clearly fictional workshop invitation.
+It has its own stylesheet and leaves the
+three graded files unchanged. Read its [source](companion/index.html) or open
+`companion/index.html` locally to explore it.
 
 A wide screen places the introduction beside a paper-like reading column. At
 900 pixels and below, the content stacks. Native `details` elements expose design
