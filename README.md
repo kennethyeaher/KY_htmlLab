@@ -1,77 +1,117 @@
 # HTML Letter Lab
 
-INST630 Homework 1: mark up a supplied letter with semantic HTML, connect its
-provided CSS, include a local image, and publish the result with GitHub Pages.
+A semantic HTML implementation of a supplied university letter, styled with the
+course stylesheet and published with GitHub Pages. Built for INST630 Homework 1.
 
-## Files
+[View the live letter](https://kennethyeaher.github.io/KY_htmlLab/) ·
+[Review verification results](docs/verification.md)
 
-- `index.html`: complete supplied letter with semantic HTML and CSS classes.
-- `tutorial_1_letter_styles.css`: supplied stylesheet, preserved unchanged.
-- `microscope.png`: local microscope illustration, displayed at 90 by 112 pixels.
+## Contribution and scope
 
-Keep the HTML, stylesheet, and `microscope.png` in the same folder for grading.
-The image must accompany the HTML submission or its relative path will break.
+The course supplied the letter text and `tutorial_1_letter_styles.css`. The HTML
+structure, class assignments, local image integration, repository, and deployment
+were completed for this lab. The supplied visual design is credited to the course.
 
-## Preview
+The project has no JavaScript, external fonts, package dependencies, or build step.
+Its size and scope are intentional: practice readable HTML and demonstrate that
+an implementation matches a supplied specification.
 
-Open `index.html` in a browser, or use VS Code Live Server. No build step or
-project dependencies are required. The HTML links the supplied stylesheet
-using a relative path.
+## Three decisions worth explaining
 
-## Status
+### Let the content determine the element
 
-GitHub Pages is deployed. The live HTML, CSS, and PNG returned HTTP 200 with
-correct content types and matched the local files byte for byte on September
-10, 2026. Local Safari screenshots confirm both styling and microscope rendering.
-Live browser appearance and Developer Tools checks remain pending. The university
-dates and dance research references have no supplied URLs and remain plain text.
+The research ideas are ranked, so they use an ordered list. Semester dates use
+an unordered list. Dance names and definitions use `dl`, `dt`, and `dd`.
+These distinctions remain available when styling is absent or content is read
+with assistive technology.
 
-## Check the styles
+```html
+<ol class="priority-list">
+  <li>...</li>
+</ol>
 
-Reload the letter after saving changes. In browser Developer Tools, open Network
-and reload again to check that `tutorial_1_letter_styles.css` loads. Inspect the
-subject heading and confirm that `.letter-subject` supplies its blue color.
-Inspect the greeting to see both `.letter-paragraph` and `.letter-greeting`.
+<dl class="dance-definitions">
+  <dt class="dance-term">Polynesian chicken dance</dt>
+  <dd class="dance-definition">...</dd>
+</dl>
+```
 
-The semester and research lists carry their classes on `ul` and `ol`. The
-stylesheet targets their items through `.semester-dates li` and
-`.priority-list li`; those items do not need an additional class.
+These are abbreviated examples; the submission contains the full supplied text.
 
-## Image source
+### Match the stylesheet through classes
 
-`microscope.png` is an unchanged local copy of
+```html
+<p class="letter-paragraph letter-greeting">Dear Eileen,</p>
+```
+
+`letter-paragraph` supplies spacing, while `letter-greeting` supplies the greeting
+size, weight, and color. The order of class names in HTML does not decide which
+CSS rule wins. Cascade order and selector specificity resolve conflicting rules.
+
+List item styles use descendant selectors such as `.priority-list li`. The class
+belongs on the list; each item is matched through that ancestor.
+
+### Make the submission portable
+
+```html
+<link rel="stylesheet" href="tutorial_1_letter_styles.css">
+<img src="microscope.png" alt="Illustration of a laboratory microscope."
+  width="90" height="112">
+```
+
+Both paths resolve beside the HTML. Explicit image dimensions reserve its space,
+and alternative text conveys its subject. The document uses semantic dates,
+abbreviations, subscripts, superscripts, quotation, and citation markup as well.
+
+## Preview and submission
+
+Open `index.html` in a browser or use VS Code Live Server. Submit these files
+together, with no folder nesting between them:
+
+| File | Purpose |
+| --- | --- |
+| `index.html` | Complete letter and stylesheet link; the Pages entry page. |
+| `tutorial_1_letter_styles.css` | Supplied stylesheet, preserved unchanged. |
+| `microscope.png` | Local image required by the HTML. |
+
+The HTML was renamed from `tutorial_1.html` for Pages. The original starter files
+remain outside this repository. Additional documentation is not needed to render
+or grade the letter.
+
+## Verification and remaining limits
+
+The [verification report](docs/verification.md) records dates, methods, actual
+results, and manual reproduction steps. The W3C HTML checker returned no messages.
+Browser inspection confirmed applied styles, the image, keyboard focus, and no
+page overflow at the tested widths of 320, 768, and 1280 CSS pixels.
+
+The supplied yellow focus ring has low contrast. True 200% browser zoom and
+VoiceOver listening tests remain unverified. The university dates and dance
+research references have no supplied destinations and remain plain text. These
+limits are documented without altering the assignment's supplied stylesheet or
+inventing destinations.
+
+| Rubric criterion | Evidence |
+| --- | --- |
+| Semantic HTML structure | Text preservation, HTML validation, and browser semantics checked. |
+| Image inclusion | Local and live asset checks; browser reported the image loaded at 90 by 112 pixels. |
+| CSS linking | Correct relative path; browser inspection confirmed the stylesheet and applied rules. |
+| CSS classes | All 26 supplied class names applied and element mappings checked. |
+| GitHub Pages | Deployment passed; live HTML and both assets matched local files. |
+
+Pages is deployed from `main` and the repository root. Although the assignment
+calls deployment optional, it assigns Pages four points out of twenty.
+
+## Image credit
+
+`microscope.png` is an unchanged copy of
 [Microscope icon.png](https://commons.wikimedia.org/wiki/File:Microscope_icon.png)
 from Wikimedia Commons. The page credits Musaromana for the original image and
-MaxBet for removing the background, and lists the image as public domain.
+MaxBet for removing its background, and lists it as public domain.
 
-The HTML supplies alternative text describing the microscope and explicit
-width and height matching the source image. Reload the page to confirm it
-appears above the letter. In Developer Tools, check that `microscope.png` loads
-and that the image has natural dimensions of 90 by 112 pixels.
+## What this exercise demonstrates
 
-## Submission and deployment
-
-Submit `index.html` with `microscope.png`, keeping both beside
-`tutorial_1_letter_styles.css`. The HTML was renamed from `tutorial_1.html` so
-GitHub Pages can use it as the site entry page. Its content and relative asset
-paths are unchanged.
-
-For GitHub Pages, publish from the `main` branch and the repository root (`/`).
-No custom build workflow is needed.
-
-- [Repository](https://github.com/kennethyeaher/KY_htmlLab)
-- [Live letter](https://kennethyeaher.github.io/KY_htmlLab/)
-
-The Pages build and deployment passed. GitHub reported a Node deprecation warning
-in its managed build workflow; the lab itself has no Node dependency.
-
-The assignment calls Pages optional, but its rubric assigns deployment four
-points out of twenty. Deployment is therefore included in the submission plan.
-
-| Rubric criterion | Current evidence |
-| --- | --- |
-| Semantic HTML structure | Text preservation and structure checks passed; Safari screenshots reviewed. |
-| Image inclusion | Live PNG returned HTTP 200 and matched the local file; local Safari rendering confirmed. |
-| CSS linking | Live CSS returned HTTP 200 and matched the supplied stylesheet; local styled Safari screenshots reviewed. |
-| CSS classes | All 26 supplied class names applied; element mappings checked. |
-| GitHub Pages | Deployment passed; live HTML and both assets returned HTTP 200 and matched local files. |
+Working within an existing specification requires reading selectors, understanding
+content, and checking the result in a browser. Visual output alone does not prove
+valid HTML, and a valid document alone does not establish accessibility. Each
+kind of evidence answers a different question.
