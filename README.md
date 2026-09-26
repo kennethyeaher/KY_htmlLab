@@ -7,6 +7,11 @@ course stylesheet and published with GitHub Pages. Built for INST630 Homework 1.
 [Review verification results](docs/verification.md) ·
 [View the live companion](https://kennethyeaher.github.io/KY_htmlLab/companion/)
 
+
+![Correspondence companion showing its introduction beside the workshop invitation.](docs/readme/preview.png)
+
+The original Correspondence companion, captured in a browser. The supplied letter remains the graded exercise.
+
 ## Contribution and scope
 
 The course supplied the letter text and `tutorial_1_letter_styles.css`. The HTML
@@ -143,3 +148,14 @@ Working within an existing specification requires reading selectors, understandi
 content, and checking the result in a browser. Visual output alone does not prove
 valid HTML, and a valid document alone does not establish accessibility. Each
 kind of evidence answers a different question.
+
+---
+
+## Author
+
+**Kenneth Yeaher**  
+MS in Human Computer Interaction  
+University of Maryland, College Park  
+[![LinkedIn: Kenneth Yeaher](https://img.shields.io/badge/LinkedIn-Kenneth_Yeaher-0A66C2?style=flat)](https://www.linkedin.com/in/kennethyeaher/)
+
+`Semantic HTML` · `CSS` · `Document Design`
