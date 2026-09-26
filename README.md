@@ -1,39 +1,3 @@
-<p align="center">
-  <img src="docs/readme/banner.svg" alt="Correspondence. Readable structure, from letter to browser." width="100%">
-</p>
-
-<p align="center">
-  <img alt="HTML + CSS" src="https://img.shields.io/badge/HTML%20%2B%20CSS-3B4658?style=flat-square">
-  <a href="https://kennethyeaher.github.io/KY_htmlLab/"><img alt="Open live site" src="https://img.shields.io/badge/demo-live-3B4658?style=flat-square"></a>
-</p>
-
-<p align="center"><a href="https://kennethyeaher.github.io/KY_htmlLab/">Live site ↗</a> &nbsp; · &nbsp; <a href="https://kennethyeaher.github.io/KY_htmlLab/companion/">Companion invitation</a> &nbsp; · &nbsp; <a href="docs/verification.md">Verification notes</a></p>
-
-## Overview
-
-A semantic HTML letter lab with an original companion invitation. The graded page preserves the supplied letter and stylesheet; the companion explores the same skills through a separate, clearly fictional workshop invitation.
-
-## At a glance
-
-| Area | What to look for |
-| --- | --- |
-| **Graded letter** | Semantic lists, dates, quotations, and class assignments tied to the supplied CSS. |
-| **Original companion** | A separate reading layout with expandable design notes and print styles. |
-| **Evidence** | Documented browser and markup checks, with remaining limits stated explicitly. |
-
-## Start here
-
-Open `index.html` for the class submission or `companion/index.html` for the original extension. Both run without a build step.
-
-## Scope
-
-The course supplied the graded letter text and visual design. The original companion is a separate extension, not a replacement for the required submission.
-
----
-
-<details>
-<summary><strong>Implementation, assignment coverage, and image credits</strong></summary>
-
 # HTML Letter Lab
 
 A semantic HTML implementation of a supplied university letter, styled with the
@@ -179,5 +143,3 @@ Working within an existing specification requires reading selectors, understandi
 content, and checking the result in a browser. Visual output alone does not prove
 valid HTML, and a valid document alone does not establish accessibility. Each
 kind of evidence answers a different question.
-
-</details>
