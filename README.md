@@ -1,5 +1,8 @@
 # HTML Letter Lab
 
+![HTML5](docs/readme/badges/html5-E34F26.svg)
+![CSS](docs/readme/badges/css-663399.svg)
+
 A semantic HTML implementation of a supplied university letter, styled with the
 course stylesheet and published with GitHub Pages. Built for INST630 Homework 1.
 
@@ -21,6 +24,13 @@ were completed for this lab. The supplied visual design is credited to the cours
 The project has no JavaScript, external fonts, package dependencies, or build step.
 Its size and scope are intentional: practice readable HTML and demonstrate that
 an implementation matches a supplied specification.
+
+## Two ways to review the work
+
+- **Course letter:** inspect `index.html` for semantic markup and its relationship to the supplied stylesheet. This is the specification driven part of the exercise.
+- **Correspondence companion:** inspect `companion/index.html` for an original application of the same skills, including responsive composition, native disclosure controls, and a print layout.
+
+Keeping the two separate makes the graded requirements easy to inspect while leaving room to explore document design.
 
 ## Three decisions worth explaining
 
